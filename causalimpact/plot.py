@@ -49,6 +49,7 @@ def plot(
       RuntimeError: if inferences were not computed yet.
     """
     plt = get_plotter()
+    plt.ioff()
     plt.figure(figsize=figsize)
     valid_panels = ['original', 'pointwise', 'cumulative']
     for panel in panels:
